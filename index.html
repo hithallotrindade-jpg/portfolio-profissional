@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Portfólio de desenvolvimento web com projetos de sites modernos e responsivos."
+    />
+
+    <title>Meu Portfólio | Desenvolvimento Web</title>
+
+    <link rel="icon" href="data:," />
+
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="container">
+        <h1 class="logo">Dev<span>Portfolio</span></h1>
+
+        <nav>
+          <a href="#inicio">Início</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="inicio" class="inicio">
+        <div class="container">
+          <p class="etiqueta">DESENVOLVIMENTO WEB</p>
+
+          <h2>Transformando ideias em sites profissionais.</h2>
+
+          <p class="descricao">
+            Desenvolvo projetos web com foco em organização, facilidade de uso e
+            apresentação profissional para pequenos negócios e empreendedores.
+          </p>
+
+          <div class="botoes">
+            <a href="#projetos" class="botao">Ver meus projetos</a>
+            <a href="#contato" class="botao botao-secundario">
+              Entrar em contato
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="projetos" class="secao">
+        <div class="container">
+          <p class="etiqueta">MEU TRABALHO</p>
+          <h2>Projetos em destaque</h2>
+
+          <p class="introducao">
+            Conheça alguns projetos desenvolvidos durante minha jornada de
+            aprendizado em desenvolvimento web.
+          </p>
+
+          <div class="grade-projetos">
+            <article class="cartao-projeto">
+              <div class="imagem-projeto imagem-techfix">
+                <span>TechFix</span>
+              </div>
+
+              <div class="conteudo-cartao">
+                <h3>TechFix — Assistência Técnica</h3>
+
+                <p>
+                  Site demonstrativo para uma assistência técnica, com serviços,
+                  perguntas frequentes e opções de contato.
+                </p>
+
+                <p class="tecnologias">HTML · CSS · JavaScript</p>
+
+                <a
+                  href="https://hithallotrindade-jpg.github.io/projeto-02-techfix/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="link-projeto"
+                >
+                  Visitar projeto →
+                </a>
+              </div>
+            </article>
+
+            <article class="cartao-projeto">
+              <div class="imagem-projeto imagem-sabor">
+                <span>Sabor da Casa</span>
+              </div>
+
+              <div class="conteudo-cartao">
+                <h3>Sabor da Casa — Hamburgueria</h3>
+
+                <p>
+                  Site demonstrativo para uma hamburgueria, criado para praticar
+                  a estruturação de páginas e a estilização com CSS.
+                </p>
+
+                <p class="tecnologias">HTML · CSS</p>
+
+                <a
+                  href="https://hithallotrindade-jpg.github.io/Projeto-01-sabor-da-casa/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="link-projeto"
+                >
+                  Visitar projeto →
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicos" class="secao secao-destaque">
+        <div class="container">
+          <p class="etiqueta">COMO POSSO AJUDAR</p>
+          <h2>Serviços</h2>
+
+          <div class="grade-servicos">
+            <article class="cartao-servico">
+              <h3>Criação de sites</h3>
+              <p>
+                Páginas para apresentar negócios, serviços e informações
+                importantes.
+              </p>
+            </article>
+
+            <article class="cartao-servico">
+              <h3>Sites responsivos</h3>
+              <p>
+                Layouts planejados para funcionar em celulares, tablets e
+                computadores.
+              </p>
+            </article>
+
+            <article class="cartao-servico">
+              <h3>Atualização de sites</h3>
+              <p>
+                Melhorias visuais e ajustes em páginas web existentes, conforme
+                a necessidade do projeto.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="secao sobre">
+        <div class="container">
+          <p class="etiqueta">SOBRE MIM</p>
+          <h2>Aprendendo, construindo e evoluindo.</h2>
+
+          <p>
+            Sou estudante de Análise e Desenvolvimento de Sistemas e estou
+            desenvolvendo minhas habilidades por meio de projetos práticos.
+          </p>
+
+          <p>
+            Meu objetivo é criar soluções web úteis, com visual organizado,
+            navegação simples e atenção aos detalhes.
+          </p>
+        </div>
+      </section>
+
+      <section id="contato" class="secao contato">
+        <div class="container">
+          <p class="etiqueta">VAMOS CONVERSAR?</p>
+          <h2>Tem uma ideia para seu site?</h2>
+
+          <p>
+            Entre em contato para conversar sobre seu projeto e avaliar as
+            possibilidades.
+          </p>
+
+          <a
+            href="https://github.com/hithallotrindade-jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="botao"
+          >
+            Conhecer meu GitHub
+          </a>
+
+          <p class="aviso-contato">
+            Este portfólio está em desenvolvimento. Os serviços apresentados
+            representam minhas áreas de interesse e prática.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <div class="container">
+        <p>
+          © <span id="ano"></span> Meu Portfólio. Desenvolvido com HTML, CSS e
+          JavaScript.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
