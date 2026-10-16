@@ -1,5 +1,9 @@
-const anoAtual = new Date().getFullYear();
+// Atualiza automaticamente o ano do rodapé
+const elementoAno = document.getElementById("ano");
 
-document.getElementById("ano").textContent = anoAtual;
+if (elementoAno) {
+  elementoAno.textContent = new Date().getFullYear();
+}
 
+// Confirma o carregamento durante o desenvolvimento
 console.log("Portfólio carregado com sucesso!");
