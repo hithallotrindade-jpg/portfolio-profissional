@@ -18,13 +18,17 @@
   <body>
     <header class="cabecalho">
       <div class="container">
-        <h1 class="logo">Dev<span>Portfolio</span></h1>
+        <a href="#inicio" class="logo" aria-label="DevPortfolio - Início">
+          Dev<span>Portfolio</span>
+        </a>
 
-        <nav>
+        <nav aria-label="Navegação principal">
           <a href="#inicio">Início</a>
           <a href="#projetos">Projetos</a>
           <a href="#servicos">Serviços</a>
-          <a href="#contato">Contato</a>
+          <a href="#contato" class="link-contato"
+            >Vamos conversar <span aria-hidden="true">↗</span></a
+          >
         </nav>
       </div>
     </header>
@@ -32,20 +36,32 @@
     <main>
       <section id="inicio" class="inicio">
         <div class="container">
-          <p class="etiqueta">DESENVOLVIMENTO WEB</p>
+          <p class="etiqueta">DESENVOLVIMENTO WEB & SOLUÇÕES DIGITAIS</p>
 
-          <h2>Transformando ideias em sites profissionais.</h2>
+          <h2>
+            Seu negócio merece uma
+            <span class="texto-destaque">presença digital extraordinária.</span>
+          </h2>
 
           <p class="descricao">
-            Desenvolvo projetos web com foco em organização, facilidade de uso e
-            apresentação profissional para pequenos negócios e empreendedores.
+            Crio sites modernos, responsivos e funcionais para ajudar pequenos
+            negócios e empreendedores a apresentar seus serviços com mais
+            profissionalismo na internet.
           </p>
 
           <div class="botoes">
-            <a href="#projetos" class="botao">Ver meus projetos</a>
-            <a href="#contato" class="botao botao-secundario">
-              Entrar em contato
+            <a href="#projetos" class="botao">
+              Explorar projetos <span aria-hidden="true">→</span>
             </a>
+
+            <a href="#contato" class="botao botao-secundario">
+              Vamos conversar
+            </a>
+          </div>
+
+          <div class="resumo-profissional">
+            <span class="indicador-online" aria-hidden="true"></span>
+            <p>Estudante de ADS · Desenvolvedor web em formação</p>
           </div>
         </div>
       </section>
@@ -62,21 +78,42 @@
 
           <div class="grade-projetos">
             <article class="cartao-projeto">
-              <div class="imagem-projeto imagem-techfix">
-                <span>TechFix</span>
-              </div>
+              <a
+                href="https://hithallotrindade-jpg.github.io/projeto-02-techfix/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="preview-projeto imagem-techfix"
+                aria-label="Visitar o site TechFix"
+              >
+                <img
+                  src="img/techfix.png"
+                  alt="Captura de tela do site TechFix - Assistência Técnica"
+                  loading="lazy"
+                />
+                <span class="selo-preview">Projeto publicado</span>
+              </a>
 
               <div class="conteudo-cartao">
+                <p class="categoria-projeto">
+                  SITE COMERCIAL · ASSISTÊNCIA TÉCNICA
+                </p>
+
                 <h3>TechFix — Assistência Técnica</h3>
 
                 <p>
-                  Site demonstrativo para uma assistência técnica, com
-                  apresentação de serviços, perguntas frequentes, navegação por
-                  seções e interação com JavaScript.
+                  Uma página comercial para apresentar serviços de assistência
+                  técnica, transmitir confiança e facilitar o contato de
+                  clientes
                 </p>
 
+                <div class="lista-recursos">
+                  <span>Apresentação de serviços</span>
+                  <span>FAQ interativo</span>
+                  <span>Layout responsivo</span>
+                </div>
+
                 <p class="tecnologias">
-                  HTML · CSS · JavaScript · GitHub Pages
+                  <strong>Tecnologias:</strong> HTML, CSS e JavaScript
                 </p>
 
                 <a
@@ -85,26 +122,47 @@
                   rel="noopener noreferrer"
                   class="link-projeto"
                 >
-                  Visitar site →
+                  Explorar projeto <span aria-hidden="true">↗</span>
                 </a>
               </div>
             </article>
 
             <article class="cartao-projeto">
-              <div class="imagem-projeto imagem-sabor">
-                <span>Bino's Burguer</span>
-              </div>
+              <a
+                href="https://hithallotrindade-jpg.github.io/Projeto-01-Hamburgueria/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="preview-projeto imagem-sabor"
+                aria-label="Visitar o site Bino's Burguer"
+              >
+                <img
+                  src="img/binos-burguer.png"
+                  alt="Captura de tela do site Bino's Burguer"
+                  loading="lazy"
+                />
+                <span class="selo-preview">Projeto publicado</span>
+              </a>
 
               <div class="conteudo-cartao">
-                <h3>Bino's Burguer — Hamburgueria</h3>
+                <p class="categoria-projeto">SITE COMERCIAL · HAMBURGUERIA</p>
+
+                <h3>Bino's Burguer</h3>
 
                 <p>
-                  Projeto demonstrativo de um site para hamburgueria,
-                  desenvolvido para praticar a estruturação de páginas e a
-                  criação de um visual personalizado com CSS.
+                  Um site para divulgar hambúrgueres, apresentar produtos e
+                  preços e facilitar a montagem e o envio de pedidos pelo
+                  WhatsApp.
                 </p>
 
-                <p class="tecnologias">HTML · CSS</p>
+                <div class="lista-recursos">
+                  <span>Catálogo de produtos</span>
+                  <span>Carrinho de compras</span>
+                  <span>Pedido pelo WhatsApp</span>
+                </div>
+
+                <p class="tecnologias">
+                  <strong>Tecnologias:</strong> HTML, CSS e JavaScript
+                </p>
 
                 <a
                   href="https://hithallotrindade-jpg.github.io/Projeto-01-Hamburgueria/"
@@ -112,7 +170,7 @@
                   rel="noopener noreferrer"
                   class="link-projeto"
                 >
-                  Visitar site →
+                  Explorar projeto <span aria-hidden="true">↗</span>
                 </a>
               </div>
             </article>
@@ -180,28 +238,49 @@
       <section id="contato" class="secao contato">
         <div class="container">
           <p class="etiqueta">VAMOS CONVERSAR?</p>
+
           <h2>Vamos tirar sua ideia do papel?</h2>
 
           <p>
             Precisa de um site para apresentar seu negócio, divulgar seus
-            serviços ou fortalecer sua presença na internet? Vamos conversar
-            sobre sua ideia.
+            serviços ou fortalecer sua presença na internet? Entre em contato e
+            vamos conversar sobre seu projeto.
           </p>
 
-          <a
-            href="https://github.com/hithallotrindade-jpg"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="botao"
-          >
-            Conhecer meu GitHub
-          </a>
+          <div class="botoes botoes-contato">
+            <a
+              href="https://wa.me/5563992515778?text=Ol%C3%A1%21%20Encontrei%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20or%C3%A7amento%20para%20um%20projeto%20web."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="botao"
+            >
+              <span aria-hidden="true">◉</span>
+              Solicitar orçamento pelo WhatsApp
+            </a>
+
+            <a
+              href="https://www.instagram.com/hithallotrindade/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="botao botao-secundario"
+            >
+              Acompanhar no Instagram ↗
+            </a>
+
+            <a
+              href="https://github.com/hithallotrindade-jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="botao botao-secundario"
+            >
+              Conhecer meu GitHub ↗
+            </a>
+          </div>
 
           <p class="aviso-contato">
-            Sou estudante de Análise e Desenvolvimento de Sistemas e estou
-            desenvolvendo minhas habilidades por meio de projetos práticos.
-            Entre em contato para conversarmos sobre as possibilidades do seu
-            projeto.
+            Estudante de Análise e Desenvolvimento de Sistemas, desenvolvendo
+            projetos web com foco em usabilidade, responsividade e apresentação
+            profissional.
           </p>
         </div>
       </section>
